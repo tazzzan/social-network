@@ -10,9 +10,11 @@
 
 <app-add-comment [post]="post"></app-add-comment>
 
+
 <div class="post-comment" *ngFor="let comment of post.comments">
-  comment:{{comment.author}}
-  comment:{{comment.text}}
+<app-comment [comment]="comment"></app-comment>
 </div>
+
+
 
 <div>:::::::::::::::::::::::::::</div>
