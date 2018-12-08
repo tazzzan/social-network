@@ -9,6 +9,7 @@ import {PostService} from './posts/postservice.service';
 import {TextfieldComponent} from "./textfield/textfield.component";
 import { PostComponent } from './posts/post/post.component';
 import { AddCommentComponent } from './posts/post/add-comment/add-comment.component';
+import {CommentComponent} from './posts/post/comment/comment.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AddCommentComponent } from './posts/post/add-comment/add-comment.compon
     PostsColumnComponent,
     TextfieldComponent,
     PostComponent,
-    AddCommentComponent
+    AddCommentComponent,
+    CommentComponent
   ],
   imports: [
     BrowserModule,
