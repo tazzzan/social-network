@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {Post, PostService} from '../posts/postservice.service';
+import {PostService} from '../posts/postservice.service';
+import {Post} from "../posts/post.class";
 
 @Component({
   selector: 'app-search-bar',

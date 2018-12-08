@@ -1,11 +1,10 @@
 import {Injectable, OnInit} from '@angular/core';
+import {Post} from "./post.class";
 
 @Injectable()
 export class PostService implements OnInit {
 
   posts: Post[] = [];
-
-
 
   constructor() {
   }
@@ -37,22 +36,4 @@ export class PostService implements OnInit {
 
 }
 
-export class Post {
-  text: string;
-  author: string;
-  comments: string[] = [];
 
-
-
-  constructor(text: string, author: string) {
-    this.text = text;
-    this.author = author;
-  }
-
-
-
-  addComment(text: string, author: string) {
-
-  }
-
-}
