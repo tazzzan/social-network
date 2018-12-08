@@ -4,7 +4,7 @@ import {PostService} from '../posts/postservice.service';
 @Component({
   selector: 'app-posts-column',
   templateUrl: './posts-column.component.html',
-  styleUrls: ['./posts-column.component.scss']
+  styleUrls: ['./posts-column.component.css']
 })
 export class PostsColumnComponent implements OnInit {
 

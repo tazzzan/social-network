@@ -1,10 +1,16 @@
-Search by author: <input type="text" name="search-field" #author>
-<button (click)="searchByAuthor(author.value)">Search</button>
+<div class="search-bar">
 
-<br>
-<br>
+  Search by author: <input type="text" name="search-field" #author>
+  <button (click)="searchByAuthor(author.value)">Search</button>
 
-<div *ngFor="let post of results">
-  <app-post [post]="post"></app-post>
+  <br>
+  <br>
+
+  <div *ngFor="let post of results">
+    <app-post [post]="post"></app-post>
+  </div>
+
+
 </div>
+
 

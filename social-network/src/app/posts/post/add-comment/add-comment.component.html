@@ -1,0 +1,10 @@
+<div class="add-post-comment" *ngIf="post.toAddComment">
+
+  <span>Comment</span>
+  <input #commentText>
+  <span>Author</span>
+  <input #commentAuthor>
+
+  <button (click)="post.addComment(commentText.value,commentAuthor.value)">Add Comment</button>
+
+</div>

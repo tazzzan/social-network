@@ -8,6 +8,7 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
 import {PostService} from './posts/postservice.service';
 import {TextfieldComponent} from "./textfield/textfield.component";
 import { PostComponent } from './posts/post/post.component';
+import { AddCommentComponent } from './posts/post/add-comment/add-comment.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PostComponent } from './posts/post/post.component';
     SearchBarComponent,
     PostsColumnComponent,
     TextfieldComponent,
-    PostComponent
+    PostComponent,
+    AddCommentComponent
   ],
   imports: [
     BrowserModule,
