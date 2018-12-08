@@ -2,31 +2,5 @@
 
 
 <div *ngFor="let post of postService.posts">
-  <div>
-    Text: {{post.text}}
-  </div>
-
-  <div>
-    Author: {{post.author}}
-  </div>
-
-  <button (click)="post.toAddComment = !post.toAddComment" >Add Comment</button>
-
-  <div class="add-post-comment" *ngIf="post.toAddComment">
-
-    <span>Comment</span>
-    <input #commentText>
-    <span>Author</span>
-    <input #commentAuthor>
-
-    <button (click)="post.addComment(commentText.value,commentAuthor.value)">Add Comment</button>
-
-  </div>
-
-  <div class="post-comment" *ngFor="let comment of post.comments">
-    comment:{{comment.author}}
-    comment:{{comment.text}}
-  </div>
-
-  <div>:::::::::::::::::::::::::::</div>
-</div>
+  <app-post [post]="post"></app-post>
+ </div>

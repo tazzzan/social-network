@@ -5,24 +5,6 @@ Search by author: <input type="text" name="search-field" #author>
 <br>
 
 <div *ngFor="let post of results">
-  <div>
-    Text: {{post.text}}
-  </div>
-
-  <div>
-    Author: {{post.author}}
-  </div>
-
-  <input #commentText>
-  <br>
-  <input #commentAuthor>
-  <button (click)="post.addComment(commentText.value,commentAuthor.value)">Add Comment</button>
-
-  <div class="post-comment" *ngFor="let comment of post.comments">
-    comment:{{comment.author}}
-    comment:{{comment.text}}
-  </div>
-
-  <div>:::::::::::::::::::::::::::</div>
+  <app-post [post]="post"></app-post>
 </div>
 
