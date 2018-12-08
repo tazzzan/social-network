@@ -13,8 +13,6 @@ export class PostService implements OnInit {
 
 
   ngOnInit(): void {
-    this.addPost('Today is a good day!', 'Nico');
-    this.addPost('Tomorrow is a good day!', 'Manu');
   }
 
 

@@ -19,6 +19,9 @@ export class PostsColumnComponent implements OnInit {
 
 
   ngOnInit() {
+
+    this.postService.addPost('Today is a good day!', 'Nico');
+    this.postService.addPost('Tomorrow is a good day!', 'Manu');
   }
 
 }
