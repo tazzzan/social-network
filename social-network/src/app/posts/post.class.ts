@@ -4,6 +4,7 @@ export class Post {
   text: string;
   author: string;
   comments: Comment[] = [];
+  toAddComment: boolean = false;
 
 
 
