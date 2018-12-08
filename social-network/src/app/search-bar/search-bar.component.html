@@ -1,0 +1,18 @@
+Search by author: <input type="text" name="search-field" #author>
+<button (click)="searchByAuthor(author.value)">Search</button>
+
+<br>
+<br>
+
+<div *ngFor="let post of results">
+  <div>
+    Text: {{post.text}}
+  </div>
+
+  <div>
+    Author: {{post.author}}
+  </div>
+
+  <div>:::::::::::::::::::::::::::</div>
+</div>
+

@@ -6,21 +6,25 @@ export class PostService implements OnInit {
   posts: Post[] = [];
 
 
-
   constructor() {
   }
-
 
 
   ngOnInit(): void {
   }
 
 
-
-  searchByAuthor() {
-
+  searchByAuthor(author: string): Post[] {
+    const results: Post[] = [];
+    console.log("Author: " + author);
+    this.posts.forEach(post => {
+      console.log("- post Author: " + post.author);
+      if (post.author === author){
+        results.push(post);
+      }
+    });
+    return results;
   }
-
 
 
   addPost(text: string, author: string) {
@@ -33,7 +37,6 @@ export class Post {
   text: string;
   author: string;
   comments: string[] = [];
-
 
 
   constructor(text: string, author: string) {
