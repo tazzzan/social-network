@@ -1,0 +1,9 @@
+<p>Text</p>
+<input #text>
+<br>
+<p>Name:</p>
+<input #authorName>
+
+
+<button class="add-post-button"(click)="postService.addPost(text.value,authorName.value)">Senden</button>
+
